@@ -11,15 +11,15 @@ from utils.model import create_model, lr_reduction_root, lr_reduction_vowel, \
 def get_parser():
     parser = argparse.ArgumentParser(description='Module for model training.')
 
-    parser.add_argument('n_epochs', type=int, help='Number of epochs to train model.',
+    parser.add_argument('--n_epochs', type=int, help='Number of epochs to train model.',
                         default=16, nargs='?')
-    parser.add_argument('n_parquets', type=int, help='Number of parquets to train on.',
+    parser.add_argument('--n_parquets', type=int, help='Number of parquets to train on.',
                         default=4, nargs='?')
-    parser.add_argument('batch_size', type=int, help='Model batch size.',
+    parser.add_argument('--batch_size', type=int, help='Model batch size.',
                         default=256, nargs='?')
-    parser.add_argument('image_size', type=int, help='Size image at which the model will be trained.',
+    parser.add_argument('--image_size', type=int, help='Size image at which the model will be trained.',
                         default=64, nargs='?')
-    parser.add_argument('weights_path', type=str, help='Path for saving model weights.',
+    parser.add_argument('--weights_path', type=str, help='Path for saving model weights.',
                         default='weights/bengalimodal.h5', nargs='?')
 
     return parser.parse_args()

@@ -23,9 +23,9 @@ def get_parser():
     parser = argparse.ArgumentParser(description='Module for bengali classification.')
 
     parser.add_argument('images_path', type=str, help='Path to image or directory with images to predict on.')
-    parser.add_argument('weights_path', type=str, help='Path for loading model weights.',
+    parser.add_argument('--weights_path', type=str, help='Path for loading model weights.',
                         default='weights/bengalimodal.h5', nargs='?')
-    parser.add_argument('image_size', type=int, help='Size image at which the model was trained.',
+    parser.add_argument('--image_size', type=int, help='Size image at which the model was trained.',
                         default=64, nargs='?')
 
     args = parser.parse_args()
