@@ -46,6 +46,9 @@ python train.py  n_epochs  n_parquets  batch_size  image_size  weights_path
 `weights_path` - Path for saving model weights. (_optional_, _default_ = 'weights/bengalimodal.h5')
 
 
+Script loads train data from: _/train_data/competition_files_
+
+
 
 
 
