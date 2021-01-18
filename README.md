@@ -1,4 +1,6 @@
 # Python command-line Bengali Classificator
+
+Module for training model on [competition data](https://www.kaggle.com/c/bengaliai-cv19) and predicting on a single image or batch of images using trained model.
 Uses model from this [Notebook](https://www.kaggle.com/amanmishra4yearbtech/bengali-classification-quick-implementation).
 
 ## Getting Started
@@ -47,7 +49,7 @@ python  train.py
 `--weights_path` - Path for saving model weights. (_optional_, _default_ = 'weights/bengalimodal.h5')
 
 
-Script loads train data from: _/train_data/competition_files_
+Script loads train data from: _train_data/competition_files_
 
 
 
