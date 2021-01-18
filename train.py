@@ -1,7 +1,7 @@
+# Module for model training.
 import argparse
 import pandas as pd
 from sklearn.model_selection import train_test_split
-
 from utils.augmentator import create_datagen
 from utils.preprocessing import prepare_train_data
 from utils.model import create_model, lr_reduction_root, lr_reduction_vowel, \
@@ -9,7 +9,7 @@ from utils.model import create_model, lr_reduction_root, lr_reduction_vowel, \
 
 
 def get_parser():
-    parser = argparse.ArgumentParser(description='Module for bengali classification.')
+    parser = argparse.ArgumentParser(description='Module for model training.')
 
     parser.add_argument('n_epochs', type=int, help='Number of epochs to train model.',
                         default=16, nargs='?')
@@ -17,7 +17,7 @@ def get_parser():
                         default=4, nargs='?')
     parser.add_argument('batch_size', type=int, help='Model batch size.',
                         default=256, nargs='?')
-    parser.add_argument('image_size', type=int, help='Resized size',
+    parser.add_argument('image_size', type=int, help='Size image at which the model will be trained.',
                         default=64, nargs='?')
     parser.add_argument('weights_path', type=str, help='Path for saving model weights.',
                         default='weights/bengalimodal.h5', nargs='?')

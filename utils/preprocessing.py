@@ -18,7 +18,7 @@ def preprocess_image(image, image_size=64):
     image : str
         Image to process in array format, with shape (height, width)
     image_size : int
-        Size to which resize image (on which model was trained).
+        Size to which resize image (at which model was trained).
 
 
     Returns
@@ -66,7 +66,7 @@ def load_image(path, image_size=64):
     path : str
       Path to image to load and process
     image_size : int
-      Size to which resize image (on which model was trained).
+      Size to which resize image (at which model was trained).
 
     Returns
     -------
@@ -91,7 +91,7 @@ def load_images(path, image_size=64):
     path : str
         Path to dir with images to load and process
     image_size : int
-        Size to which resize images (on which model was trained).
+        Size to which resize images (at which model was trained).
 
     Returns
     -------
@@ -129,7 +129,7 @@ def prepare_train_data(df, image_size=64):
     df: pd.DataFrame()
         Parquet from competition data to train model on.
     image_size: int
-        Size to which resize images (on which model will be trained).
+        Size to which resize images (at which model will be trained).
 
     Returns
     -------
