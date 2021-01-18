@@ -41,7 +41,7 @@ def main():
     if os.path.isfile(args.images_path):
         data = load_image(args.images_path, args.image_size)
         image_names = [args.images_path]
-        data = data.reshape(-1, 64, 64, 1)
+        data = data.reshape(-1, args.image_size, args.image_size, 1)
     else:
         data, image_names = load_images(args.images_path, args.image_size)
 

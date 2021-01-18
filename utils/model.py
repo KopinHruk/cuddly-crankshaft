@@ -14,7 +14,7 @@ def create_model(image_size=64, weights_path='weights/bengalimodal.h5', pretrain
     Parameters
     ----------
     image_size: int
-        Image size to train model with.
+        Image size to use model with.
     weights_path: str
         Path to model's weights. Required if pretrained=True.
     pretrained: bool:
@@ -78,7 +78,6 @@ def create_model(image_size=64, weights_path='weights/bengalimodal.h5', pretrain
         model.load_weights(weights_path)
 
     return model
-
 
 
 # Model's callbacks
