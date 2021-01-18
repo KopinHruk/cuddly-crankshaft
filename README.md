@@ -1,5 +1,5 @@
 # Python command-line Bengali Classificator
-
+Uses model from this [Notebook](https://www.kaggle.com/amanmishra4yearbtech/bengali-classification-quick-implementation).
 
 ## Getting Started
 
@@ -24,6 +24,7 @@ python predict.py  images_path  weights_path  image_size
 
 `image_size` - Size image at which the model was trained. (_optional_, _default_ = 64)
 
+Predicted result will be saved in **result.csv**, in a format: _(image_name, head_root, head_vowel, head_consonant)_
 
 
 
